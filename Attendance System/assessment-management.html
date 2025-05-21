@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecturer-dashboard</title>
+    <link rel="stylesheet" href="assessment-management.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>Student Portal</h2>
+        <ul>
+            <li><a href="lecturer-dashboard.html"><i class="fa-solid fa-home"></i> Home</a></li>
+            <li><a href="class-management.html"><i class="fa-solid fa-chalkboard-teacher"></i> Classes</a></li>
+            <li><a href="attendance-page.html"><i class="fa-solid fa-user-check"></i> Attendance</a></li>
+            <li><a href="assessment-management.html"><i class="fa-solid fa-file-alt"></i> Assessments</a></li>
+            <li><a href="lecturer-setting.html"><i class="fa-solid fa-cog"></i> Settings</a></li>
+            <li><a href="lecturer-login.html"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <header>
+            <img src="UMaT logo.jpg" alt="School Logo" class="logo">
+            <h2>Assessment Management</h2>
+        </header>
+
+        <div class="container">
+            <!-- Add Assessment Form -->
+            <div class="assessment-form">
+                <h3>Add New Assessment</h3>
+                <form id="addAssessmentForm">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" placeholder="Enter assessment title" required>
+
+                    <label for="date">Due Date:</label>
+                    <input type="date" id="date" required>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" placeholder="Enter details"></textarea>
+
+                    <button type="submit" class="add-btn">Add Assessment</button>
+                </form>
+            </div>
+
+            <!-- Existing Assessments List -->
+            <div class="assessment-list">
+                <h3>Existing Assessments</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Due Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="assessmentTable">
+                        <tr>
+                            <td>Quiz 1</td>
+                            <td>2025-03-15</td>
+                            <td>
+                                <button class="edit-btn" onclick="editAssessment(this)">Edit</button>
+                                <button class="delete-btn" onclick="deleteAssessment(this)">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mid-Term Exam</td>
+                            <td>2025-04-05</td>
+                            <td>
+                                <button class="edit-btn" onclick="editAssessment(this)">Edit</button>
+                                <button class="delete-btn" onclick="deleteAssessment(this)">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="assessment-management.js"></script>
+</body>

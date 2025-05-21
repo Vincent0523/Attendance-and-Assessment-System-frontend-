@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Settings</title>
+    <link rel="stylesheet" href="student-setting.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>Student Portal</h2>
+        <ul>
+            <li><a href="student-dashboard.html"><i class="fa-solid fa-home"></i> Home</a></li>
+            <li><a href="student-attendance-view.html"><i class="fa-solid fa-user-check"></i> Attendance</a></li>
+            <li><a href="student-assessment-view.html"><i class="fa-solid fa-file-alt"></i> Assessments</a></li>
+            <li><a href="student-setting.html"><i class="fa-solid fa-cog"></i> Settings</a></li>
+            <li><a href="student-login.html"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav>
+    <div class="settings-container">
+        <h2>Student Settings</h2>
+        
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="reference">Reference Number</label>
+            <input type="text" id="reference" placeholder="Enter your reference number" required disabled>
+            
+            <hr>
+            <h3>Change Password</h3>
+            
+            <label for="old-password">Old Password</label>
+            <input type="password" id="old-password" placeholder="Enter old password">
+            
+            <label for="new-password">New Password</label>
+            <input type="password" id="new-password" placeholder="Enter new password">
+            
+            <hr>
+            <button type="submit" class="save-btn">Save Changes</button>
+        </form>
+    </div>
+    
+</body>
+</html>

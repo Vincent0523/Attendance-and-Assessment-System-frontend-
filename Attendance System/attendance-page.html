@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Taking</title>
+    <link rel="stylesheet" href="attendance-page.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="lecturer-dashboard.html"><i class="fa-solid fa-home"></i> Home</a></li>
+                <li><a href="class-management.html"><i class="fa-solid fa-chalkboard-teacher"></i> Classes</a></li>
+                <li><a href="attendance-page.html"><i class="fa-solid fa-user-check"></i> Attendance</a></li>
+                <li><a href="assessment-management.html"><i class="fa-solid fa-file-alt"></i> Assessments</a></li>
+                <li><a href="lecturer-setting.html"><i class="fa-solid fa-cog"></i> Settings</a></li>
+                <li><a href="lecturer-login.html"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </aside>
+    <div class="main-content">
+        <header>
+            <img src="UMaT logo.jpg" alt="School Logo" class="logo">
+            <h2>Attendance Taking</h2>
+        </header>
+        <div class="class-info">
+            <h3>Class:Programming with Java</h3>
+            <p>Date: <span id="current-date"></span></p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Index Number</th>
+                    <th>Student Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SRI.41.008.050.23</td>
+                    <td>Antepim Awuah VIncent</td>
+                    <td><input type="checkbox" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>SRI.41.008.051.23</td>
+                    <td>Oppong Prosper</td>
+                    <td><input type="checkbox" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>SRI.41.008.052.23</td>
+                    <td>Addai Michael</td>
+                    <td><input type="checkbox" class="attendance-checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="submit-btn">Submit Attendance</button>
+    </div>
+
+    <script>
+        document.getElementById("current-date").innerText = new Date().toDateString();
+    </script>
+</body>
+</html>

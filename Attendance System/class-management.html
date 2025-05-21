@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Taking</title>
+    <link rel="stylesheet" href="class-management.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>Student Portal</h2>
+        <ul>
+            <li><a href="lecturer-dashboard.html"><i class="fa-solid fa-home"></i> Home</a></li>
+            <li><a href="class-management.html"><i class="fa-solid fa-chalkboard-teacher"></i> Classes</a></li>
+            <li><a href="attendance-page.html"><i class="fa-solid fa-user-check"></i> Attendance</a></li>
+            <li><a href="assessment-management.html"><i class="fa-solid fa-file-alt"></i> Assessments</a></li>
+            <li><a href="lecturer-setting.html"><i class="fa-solid fa-cog"></i> Settings</a></li>
+            <li><a href="lecturer-login.html"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav> <!-- CLOSE the sidebar here -->
+
+    <!-- Move main-content outside of sidebar -->
+    <div class="main-content">
+        <div class="container">
+            <h2>Class Management</h2>
+            <form id="classForm">
+                <div class="form-group">
+                    <label for="className">Class Name:</label>
+                    <input type="text" id="className" required>
+                </div>
+                <button type="submit" class="btn btn-add">Add Class</button>
+            </form>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="classTableBody">
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>

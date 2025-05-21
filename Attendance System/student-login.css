@@ -1,0 +1,121 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent White */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding-right: 35px; /* Add space for the icon */
+}
+
+/* Move Icons to the Right */
+.input-group i {
+    position: absolute;
+    right: 10px;
+    color: #888;
+}
+
+/* Remember Me and Forgot Password */
+.remember-me {
+    display: flex;
+    align-items: center; /* Align checkbox and text properly */
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.remember-me input {
+    margin-right: 3px; /* Reduce space between checkbox and label */
+    transform: scale(0.9); /* Slightly reduce checkbox size if needed */
+}
+
+.remember-me label {
+    margin: 0; /* Ensure no extra margin */
+}
+
+.remember-me a {
+    margin-left: 50px;
+    color: green;
+    text-decoration: none;
+}
+
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background: darkgreen;
+}
+
+/* Register Link */
+p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+p a {
+    color: green;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
